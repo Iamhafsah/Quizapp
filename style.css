@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    color: rgb(59, 56, 56);;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(pink, white, pink, rgb(197, 86, 104));
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.welcome h3{
+    color: rgb(59, 56, 56);
+    font-size: 70px;
+    margin-top:-5rem;
+    animation: colorchange 5s 1s ease infinite;
+}
+#container{
+    position: relative;
+    background-color: white;
+    width: 500px;
+    max-width: 60%;
+    height: auto;
+    padding: 10px;
+    border: 2px solid rgb(228, 137, 152);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px;
+}
+#questions{
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+#options{
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    grid-gap: 7px;
+    margin: 10px;
+}
+
+.btn{
+    background-color: rgb(243, 230, 236);
+    border: 2px solid rgb(248, 243, 246) ;
+    box-shadow: 0 0 2px 1px rgb(241, 189, 220);
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .8rem;
+    margin-bottom: .4rem;
+}
+#start-next{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start{
+    animation: colorchange 5s 1s ease infinite;
+}
+.start, .next{
+    margin: 10px;
+    width: 5rem;
+}
+.disappear{
+    display: none;
+}
+.right{
+    color: white;
+    background-color: rgb(6, 102, 6);
+    border: 2px solid rgb(248, 243, 246) ;
+    box-shadow: 0 0 2px 1px rgb(241, 189, 220);
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .8rem;
+    margin-bottom: .4rem;
+}
+.wrong{
+    color: white;
+    background-color: rgb(196, 44, 44);
+    border: 2px solid rgb(61, 18, 44) ;
+    box-shadow: 0 0 2px 1px rgb(241, 189, 220);
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .8rem;
+    margin-bottom: .4rem;
+}
+#end1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: rgb(59, 56, 56);
+}
+.noclick {
+    font-size: 1rem;
+    padding: .8rem;
+    pointer-events: none;
+}
+.counter {
+    display:block;
+    font-size: 1.2rem;
+    line-height: .1em;
+}
+/* styling for the buttons when hovered */
+
+.btn:hover{
+    cursor: pointer;
+    background-color: lightpink;
+}
+/* media queries for smaller screens */
+@media screen and (max-width: 600px){
+    #options{
+        display: flex;
+        flex-direction:column;
+    }
+    .welcome h3{
+        font-size: 40px;
+    }
+}
+/* animation for heading */
+@keyframes colorchange{
+    0%{opacity: 0;}
+    20%{opacity: 1; color: pink;}
+    50%{color: rgb(83, 20, 64);}
+    70%{color: pink;}
+    100%{color: rgb(83, 20, 64);}
+}

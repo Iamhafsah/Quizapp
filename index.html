@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafsah's Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+    <div class="welcome"><h3>It's Quiz time!</h3></div>
+    <main id="container">
+     <div id="second-container" class="disappear">
+        <section id="section1" class="disappear">
+            <div class="counter">
+                <div class="score-counter">
+                    <p id="countscore"></p>
+                </div>
+                <div class="question-counter">
+                    <p id="countquestion"></p>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+        <div id="questions" class="questions"></div>
+        <div id="options">
+         <button class="option-a btn" id="0" onclick="choose(this)"></button>
+         <button class="option-b btn" id="1" onclick="choose(this)"></button>
+         <button class="option-c btn" id="2" onclick="choose(this)"></button>
+         <button class="option-d btn" id="3" onclick="choose(this)"></button>        
+        </div>
+     </div>
+        <div id="start-next">
+            <button class="start btn">Click Me</button>  
+            <button class="next btn disappear">Next</button>  
+        </div>
+    </section>
+    <section id="section3">
+        <div id="end" class="disappear">
+            <p id="end1"></p>
+        </div>
+    </section>
+    </main>
+</body>
+</html>
