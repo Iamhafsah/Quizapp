@@ -65,6 +65,9 @@ body{
 .start{
     animation: colorchange 5s 1s ease infinite;
 }
+.next{
+    color: rgb(131, 49, 106);
+}
 .start, .next{
     margin: 10px;
     width: 5rem;
@@ -109,6 +112,7 @@ body{
     display:block;
     font-size: 1.2rem;
     line-height: .1em;
+    color: rgb(148, 42, 116);
 }
 /* styling for the buttons when hovered */
 

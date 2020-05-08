@@ -80,7 +80,7 @@ function quizQuestions(num) {
     answeredQuestions = document.querySelector('#countquestion').innerHTML = 'Question ' + countQuestions + ' of ' + questions.length;
 }
 
-function choose(element) {
+function clickeffect(element) {
     for (let i = 0; i < questions.length; i++) {
         if (countQuestions == i && element.id == questions[i].correct){
             scoreCount += 1;
